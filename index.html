@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlace Chakana - Juego de Mesa Andino</title>
+    <meta name="description" content="Juego de mesa basado en la cosmovisión andina. Conecta pueblos y nacionalidades a través de elementos culturales.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="chakana-symbol">🔄</div>
+                <h1>Enlace Chakana</h1>
+            </div>
+            <p class="subtitle">Conecta culturas, teje identidades</p>
+            <nav class="nav">
+                <button class="nav-btn active" data-section="inicio">Inicio</button>
+                <button class="nav-btn" data-section="como-jugar">Cómo Jugar</button>
+                <button class="nav-btn" data-section="cartas">Cartas</button>
+                <button class="nav-btn" data-section="tabla">Tabla de Correspondencias</button>
+                <button class="nav-btn" data-section="simulador">Simulador</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- SECCIÓN INICIO -->
+        <section id="inicio" class="section active">
+            <div class="hero">
+                <div class="hero-text">
+                    <h2>Un juego de conexiones culturales</h2>
+                    <p>En <strong>Enlace Chakana</strong>, los jugadores tejen una cadena de identidades y elementos, creando puentes entre pueblos y nacionalidades. Inspirado en la cosmovisión andina, cada carta cuenta una historia.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">53</span>
+                            <span class="stat-label">Cartas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2-6</span>
+                            <span class="stat-label">Jugadores</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20-40</span>
+                            <span class="stat-label">Minutos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="card-preview">
+                        <div class="card identity-card">
+                            <span class="card-type">Identidad</span>
+                            <span class="card-color">🔴</span>
+                            <span class="card-number">3</span>
+                            <span class="card-name">Kichwa</span>
+                        </div>
+                        <div class="card element-card">
+                            <span class="card-type">Elemento</span>
+                            <span class="card-name">Maito</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <h3>¿Qué hace especial a Enlace Chakana?</h3>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <span class="feature-icon">🌿</span>
+                        <h4>Puentes Culturales</h4>
+                        <p>Usa Elementos para saltar entre líneas culturales, rompiendo la secuencia de color/número.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🔄</span>
+                        <h4>Flujo Constante</h4>
+                        <p>El juego nunca se traba: siempre hay una conexión posible si conoces los vínculos culturales.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🌎</span>
+                        <h4>Diversidad Andina</h4>
+                        <p>Representa 22 pueblos y nacionalidades de la región andina con sus prácticas culturales.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🎯</span>
+                        <h4>Dos Modos de Juego</h4>
+                        <p>Rápido (sin cartas) o por puntos con "Corredores Culturales" para partidas más estratégicas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CÓMO JUGAR -->
+        <section id="como-jugar" class="section">
+            <h2>📖 Cómo Jugar</h2>
+            
+            <div class="rules">
+                <div class="rule-block">
+                    <h3>🎲 Componentes</h3>
+                    <ul>
+                        <li><strong>33 Cartas de Identidad</strong> (Pueblos y Nacionalidades): tienen <span class="highlight">color</span> y <span class="highlight">número</span>.</li>
+                        <li><strong>20 Cartas de Elemento</strong>: representan objetos o prácticas culturales, funcionan como <span class="highlight">conectores</span> entre Identidades.</li>
+                        <li><strong>Total: 53 cartas</strong></li>
+                    </ul>
+                </div>
+
+                <div class="rule-block">
+                    <h3>🎯 Idea Central</h3>
+                    <p>El juego se arma como una <strong>cadena que fluye</strong> sobre la mesa. En todo momento hay una <strong>Carta de Identidad activa</strong> en el centro. Los jugadores deben mantener el flujo jugando cartas que se conecten con ella.</p>
+                </div>
+
+                <div class="rule-block">
+                    <h3>🃏 Preparación</h3>
+                    <ol>
+                        <li>Se baraja el mazo completo (53 cartas).</li>
+                        <li>Se reparten <strong>5 cartas</strong> a cada jugador (ajustable a 6-7 si son pocos jugadores).</li>
+                        <li>El resto forma el <strong>mazo de robo</strong>.</li>
+                        <li>Se voltea la primera carta para formar la <strong>pila activa</strong>.</li>
+                        <li><em>Importante:</em> Si sale un Elemento, se vuelve a robar hasta que salga una carta de Identidad.</li>
+                    </ol>
+                </div>
+
+                <div class="rule-block">
+                    <h3>🎮 Turno de Juego</h3>
+                    <p>En su turno, cada jugador debe hacer una de estas <strong>tres acciones</strong>:</p>
+                    
+                    <div class="action">
+                        <h4>A) Flujo Directo</h4>
+                        <p>Jugar una carta de Identidad que comparta <strong>color o número</strong> con la carta activa. Esa carta pasa a ser la nueva activa.</p>
+                        <div class="example">Ejemplo: Activa 🔴3 → puedes jugar 🔴1 o 🟢3</div>
+                    </div>
+
+                    <div class="action highlight-action">
+                        <h4>B) Puente Cultural ⭐ (Mecánica clave)</h4>
+                        <p>Jugar una Carta de Elemento vinculada culturalmente a la Identidad activa. Luego, en el mismo turno, jugar cualquier Identidad vinculada a ese Elemento.</p>
+                        <div class="example">Ejemplo: Activa Kichwa → juegas Maito → luego puedes jugar Shuar o Achuar</div>
+                    </div>
+
+                    <div class="action">
+                        <h4>C) Robar</h4>
+                        <p>Si no tienes jugada posible, robas una carta. Si es jugable, la juegas; si no, pasas el turno.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <h3>🏆 Condición de Victoria</h3>
+                    <div class="win-modes">
+                        <div class="win-mode">
+                            <h4>⚡ Modo Rápido</h4>
+                            <p>Gana el primer jugador en <strong>quedarse sin cartas</strong>.</p>
+                        </div>
+                        <div class="win-mode">
+                            <h4>🌟 Modo por Puntos</h4>
+                            <p>Cada vez que un jugador encadena <strong>3+ Identidades de regiones distintas</strong> (costa, sierra, amazonía) usando Elementos como puente, suma puntos extra por <strong>"Corredor Cultural"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block variant">
+                    <h3>🔀 Variante para 5+ Jugadores</h3>
+                    <p>Para que la cadena no se vuelva predecible, algunos Elementos tienen <strong>efectos especiales</strong>:</p>
+                    <ul>
+                        <li><strong>Wipala / Chakana:</strong> Comodín total (conecta con cualquier Identidad).</li>
+                        <li><strong>Bodoquera / Cerbatanas:</strong> El siguiente jugador roba 1 carta antes de jugar.</li>
+                        <li><strong>Marimba / Amorfino:</strong> Invierte el sentido del turno.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CARTAS -->
+        <section id="cartas" class="section">
+            <h2>🃏 Tipos de Cartas</h2>
+            
+            <div class="card-types">
+                <div class="card-type">
+                    <h3>🎴 Cartas de Identidad (33)</h3>
+                    <p>Representan <strong>pueblos y nacionalidades</strong>. Tienen:</p>
+                    <ul>
+                        <li><span class="highlight">Color</span> (Región): 🔴 Costa, 🟢 Sierra, 🔵 Amazonía</li>
+                        <li><span class="highlight">Número</span> (1-11): Orden dentro de su región</li>
+                        <li><span class="highlight">Nombre</span>: Pueblo o nacionalidad específica</li>
+                    </ul>
+                    <div class="card-grid">
+                        <div class="mini-card identity">🔴1 Manta</div>
+                        <div class="mini-card identity">🔴2 Huancavilca</div>
+                        <div class="mini-card identity">🟢3 Kichwa</div>
+                        <div class="mini-card identity">🟢4 Otavalo</div>
+                        <div class="mini-card identity">🔵5 Waorani</div>
+                        <div class="mini-card identity">🔵6 Shuar</div>
+                    </div>
+                    <p class="card-note"><em>Y muchos más: Salasaka, Puruwá, Achuar, Cañari, etc.</em></p>
+                </div>
+
+                <div class="card-type">
+                    <h3>🔗 Cartas de Elemento (20)</h3>
+                    <p>Representan <strong>objetos o prácticas culturales</strong>. Funcionan como <strong>puentes</strong> entre Identidades.</p>
+                    <ul>
+                        <li>No tienen número</li>
+                        <li>Se conectan a múltiples Identidades</li>
+                        <li>Permiten <span class="highlight">saltar líneas culturales</span></li>
+                    </ul>
+                    <div class="card-grid">
+                        <div class="mini-card element">🌿 Maito</div>
+                        <div class="mini-card element">🎵 Marimba</div>
+                        <div class="mini-card element">🎩 Sombrero de Paja Toquilla</div>
+                        <div class="mini-card element">🎨 Achiote</div>
+                        <div class="mini-card element">🪈 Quena</div>
+                        <div class="mini-card element">🧵 Tejeduría</div>
+                    </div>
+                    <p class="card-note"><em>20 Elementos que conectan toda la diversidad andina.</em></p>
+                </div>
+            </div>
+
+            <div class="distribution">
+                <h3>📊 Distribución de Cartas</h3>
+                <div class="dist-chart">
+                    <div class="dist-item">
+                        <span>Identidades</span>
+                        <div class="dist-bar" style="width: 62%; background: #2E86AB;">62%</div>
+                    </div>
+                    <div class="dist-item">
+                        <span>Elementos</span>
+                        <div class="dist-bar" style="width: 38%; background: #A23B72;">38%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN TABLA DE CORRESPONDENCIAS -->
+        <section id="tabla" class="section">
+            <h2>📋 Tabla de Correspondencias</h2>
+            <p class="table-intro">Los <strong>Elementos</strong> se conectan a <strong>Pueblos y Nacionalidades</strong> a través de vínculos culturales:</p>
+
+            <div class="table-container">
+                <table class="correspondence-table">
+                    <thead>
+                        <tr>
+                            <th>🔗 Elemento</th>
+                            <th>🌍 Pueblos / Nacionalidades Vinculadas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>🌿 Maito</td><td>Kichwa, Shuar, Achuar</td></tr>
+                        <tr><td>🎵 Marimba</td><td>Afroecuatoriano</td></tr>
+                        <tr><td>🎩 Sombrero de Paja Toquilla</td><td>Manta, Huancavilca</td></tr>
+                        <tr><td>🎨 Achiote (pintura corporal)</td><td>Waorani, Shuar, Achuar, Shiwiar</td></tr>
+                        <tr><td>🪈 Quena / Rondador</td><td>Otavalo, Salasaka, Kayambi, Puruwá</td></tr>
+                        <tr><td>🧥 Poncho Negro / Rojo</td><td>Otavalo, Kichwa, Karanki</td></tr>
+                        <tr><td>🧵 Tejeduría en telar</td><td>Otavalo, Salasaka, Karanki</td></tr>
+                        <tr><td>🍺 Chicha de Jora / Yuca</td><td>Puruwá, Waorani, Shuar</td></tr>
+                        <tr><td>🛡️ Coraza y Dantzante</td><td>Panzaleo, Kichwa</td></tr>
+                        <tr><td>🔪 Machete y Manta</td><td>Montubio</td></tr>
+                        <tr><td>🏳️ Wipala / Chakana</td><td>Kichwa, Otavalo, Kitukara, Kayambi</td></tr>
+                        <tr><td>🏹 Bodoquera / Cerbatanas</td><td>Waorani, Siona, Secoya, Cofán, Zápara, Andoa</td></tr>
+                        <tr><td>🎭 Amorfino</td><td>Montubio</td></tr>
+                        <tr><td>🧺 Cestería de cabuya/bejuco</td><td>Salasaka, Chibuleo, Kisapincha</td></tr>
+                        <tr><td>🌽 Chihuil / Tamal</td><td>Manta, Huancavilca</td></tr>
+                        <tr><td>📿 Collares de mullu / semillas</td><td>Huancavilca, Manta, Épera</td></tr>
+                        <tr><td>🚣 Canoa de madera</td><td>Waorani, Achuar, Shiwiar, Huancavilca</td></tr>
+                        <tr><td>🍗 Cuy asado con papas</td><td>Puruwá, Cañari, Salasaka, Kichwa</td></tr>
+                        <tr><td>👑 Corona de plumas (Tawasap)</td><td>Shuar, Achuar</td></tr>
+                        <tr><td>🏺 Cerámica ancestral</td><td>Manta, Huancavilca, Panzaleo</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-note"><em>💡 Puedes ampliar cada fila a más pueblos para que el mazo tenga más rutas posibles.</em></p>
+        </section>
+
+        <!-- SECCIÓN SIMULADOR -->
+        <section id="simulador" class="section">
+            <h2>🎮 Simulador de Juego</h2>
+            <p class="sim-intro">Prueba la mecánica de <strong>Puente Cultural</strong> en acción:</p>
+
+            <div class="simulator">
+                <div class="sim-game-area">
+                    <div class="sim-active">
+                        <h4>Carta Activa</h4>
+                        <div id="active-card" class="card identity-card">
+                            <span class="card-type">Identidad</span>
+                            <span class="card-color" id="active-color">🟢</span>
+                            <span class="card-number" id="active-number">3</span>
+                            <span class="card-name" id="active-name">Kichwa</span>
+                        </div>
+                    </div>
+
+                    <div class="sim-actions">
+                        <button id="sim-flujo" class="sim-btn">🎴 Flujo Directo</button>
+                        <button id="sim-puente" class="sim-btn">🌉 Puente Cultural</button>
+                        <button id="sim-robar" class="sim-btn">🃏 Robar</button>
+                        <button id="sim-reset" class="sim-btn reset">🔄 Reiniciar</button>
+                    </div>
+
+                    <div class="sim-log">
+                        <h4>📝 Registro</h4>
+                        <div id="sim-log-messages" class="log-messages">
+                            <p>🎲 ¡El juego ha comenzado!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sim-info">
+                    <div class="sim-players">
+                        <h4>👥 Jugadores</h4>
+                        <div id="sim-players-list">
+                            <div class="sim-player active">Jugador 1 <span class="hand-size">(5)</span></div>
+                            <div class="sim-player">Jugador 2 <span class="hand-size">(5)</span></div>
+                        </div>
+                    </div>
+                    <div class="sim-elements">
+                        <h4>🔗 Elementos Disponibles</h4>
+                        <div id="sim-elements-list">
+                            <span class="element-tag">Maito</span>
+                            <span class="element-tag">Marimba</span>
+                            <span class="element-tag">Sombrero</span>
+                            <span class="element-tag">Achiote</span>
+                            <span class="element-tag">Quena</span>
+                            <span class="element-tag">Poncho</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Enlace Chakana</h3>
+                <p>Un juego que celebra la diversidad cultural andina</p>
+            </div>
+            <div class="footer-credits">
+                <p>Diseñado con ❤️ para conectar culturas</p>
+                <p class="footer-small">Versión 1.0 - Inspirado en la cosmovisión andina</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
